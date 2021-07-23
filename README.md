@@ -251,7 +251,7 @@ $$f_{i,1} = g_{i,1} + f_{son_i,0}$$
 
 可以构造出矩阵：
 
-$$\begin{bmatrix}g_{i,0}&g_{i,0}\\&\\g_{i,1}&-\infty\end{bmatrix} \times\begin{bmatrix}f_{son_i,0}\\\\f_{son_i,1}\end{bmatrix} = \begin{bmatrix}f_{i,0}\\\\f_{i,1}\end{bmatrix}$$
+$$\begin{bmatrix}g_{i,0}&g_{i,0}\\&\\\g_{i,1}&-\infty\end{bmatrix} \times\begin{bmatrix}f_{son_i,0}\\\\f_{son_i,1}\end{bmatrix} = \begin{bmatrix}f_{i,0}\\\\f_{i,1}\end{bmatrix}$$
 
 此时我们发现可以在优秀的复杂度做出本题。
 
