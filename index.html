@@ -1,10 +1,20 @@
-  
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<div id="content"></div>
-
-<script>
-    $.get('../README.md', function(response, status, xhr){
-        $("#content").html(marked(response));
-    });
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}
+});
 </script>
+<style>
+body{ font-family:"黑体"}
+</style>
+<div id="mdtxt">
+    <body>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script>
+            $.get('../articles/test.md', function(response, status, xhr){
+                $("#mdtxt").html(marked(response));
+            });
+        </script>
+    </body>
+</div>
